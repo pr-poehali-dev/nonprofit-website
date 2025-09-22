@@ -54,22 +54,22 @@ const Index: React.FC = () => {
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
-              <div className="w-10 h-10 bg-gradient-to-r from-orange-500 to-turquoise-400 rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
                 <Icon name="Heart" size={20} className="text-white" />
               </div>
               <div>
-                <h1 className="text-2xl font-bold text-navy-600">АНО РКЦ "Цифровой регион"</h1>
+                <h1 className="text-2xl font-bold text-gray-800">АНО РКЦ "Цифровой регион"</h1>
                 <p className="text-sm text-gray-600">Региональный координационный центр</p>
               </div>
             </div>
             <nav className="hidden md:flex space-x-8">
-              <a href="#" className="text-gray-700 hover:text-orange-500 transition-colors">Главная</a>
-              <a href="#" className="text-gray-700 hover:text-orange-500 transition-colors">О нас</a>
-              <a href="#" className="text-gray-700 hover:text-orange-500 transition-colors">Проекты</a>
-              <a href="#" className="text-gray-700 hover:text-orange-500 transition-colors">Документы</a>
-              <a href="#" className="text-gray-700 hover:text-orange-500 transition-colors">Контакты</a>
+              <a href="#" className="text-gray-700 hover:text-blue-600 transition-colors">Главная</a>
+              <a href="#" className="text-gray-700 hover:text-blue-600 transition-colors">О нас</a>
+              <a href="#" className="text-gray-700 hover:text-blue-600 transition-colors">Проекты</a>
+              <a href="#" className="text-gray-700 hover:text-blue-600 transition-colors">Документы</a>
+              <a href="#" className="text-gray-700 hover:text-blue-600 transition-colors">Контакты</a>
             </nav>
-            <Button className="bg-orange-500 hover:bg-orange-600 text-white">
+            <Button className="bg-blue-600 hover:bg-blue-700 text-white">
               Поддержать
             </Button>
           </div>
@@ -77,7 +77,15 @@ const Index: React.FC = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-orange-500 via-turquoise-400 to-turquoise-500 text-white py-20">
+      <section className="relative bg-gradient-to-r from-blue-600 to-blue-700 text-white py-20 overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <img 
+            src="/img/6640df5d-c538-40b3-bd33-4c2e068dc369.jpg" 
+            alt="Background"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="relative z-10">
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
@@ -89,11 +97,11 @@ const Index: React.FC = () => {
                 Координируем проекты в сфере информационных технологий.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-white text-orange-500 hover:bg-gray-100">
+                <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
                   <Icon name="Users" size={20} className="mr-2" />
                   Присоединиться
                 </Button>
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-orange-500">
+                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
                   <Icon name="FileText" size={20} className="mr-2" />
                   Наша деятельность
                 </Button>
@@ -115,19 +123,19 @@ const Index: React.FC = () => {
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-4 gap-8">
             <div className="text-center animate-fade-in">
-              <div className="text-4xl font-bold text-orange-500 mb-2">15+</div>
+              <div className="text-4xl font-bold text-blue-600 mb-2">15+</div>
               <div className="text-gray-600">Лет опыта</div>
             </div>
             <div className="text-center animate-fade-in">
-              <div className="text-4xl font-bold text-turquoise-500 mb-2">50+</div>
+              <div className="text-4xl font-bold text-blue-500 mb-2">50+</div>
               <div className="text-gray-600">Проектов завершено</div>
             </div>
             <div className="text-center animate-fade-in">
-              <div className="text-4xl font-bold text-orange-500 mb-2">10,000+</div>
+              <div className="text-4xl font-bold text-blue-600 mb-2">10,000+</div>
               <div className="text-gray-600">Людей получили помощь</div>
             </div>
             <div className="text-center animate-fade-in">
-              <div className="text-4xl font-bold text-turquoise-500 mb-2">95%</div>
+              <div className="text-4xl font-bold text-blue-500 mb-2">95%</div>
               <div className="text-gray-600">Прозрачность расходов</div>
             </div>
           </div>
@@ -163,8 +171,8 @@ const Index: React.FC = () => {
                     <Card key={project.id} className="hover:shadow-lg transition-shadow animate-scale-in">
                       <CardHeader>
                         <div className="flex justify-between items-start mb-2">
-                          <CardTitle className="text-lg text-navy-600">{project.title}</CardTitle>
-                          <Badge variant="secondary" className="bg-turquoise-400 text-white">
+                          <CardTitle className="text-lg text-gray-800">{project.title}</CardTitle>
+                          <Badge variant="secondary" className="bg-blue-500 text-white">
                             {project.category}
                           </Badge>
                         </div>
@@ -182,11 +190,11 @@ const Index: React.FC = () => {
                           <div className="grid grid-cols-2 gap-4 text-sm">
                             <div>
                               <div className="text-gray-600">Бюджет</div>
-                              <div className="font-semibold text-orange-500">{project.budget} ₽</div>
+                              <div className="font-semibold text-blue-600">{project.budget} ₽</div>
                             </div>
                             <div>
                               <div className="text-gray-600">Получили помощь</div>
-                              <div className="font-semibold text-turquoise-500">{project.beneficiaries}</div>
+                              <div className="font-semibold text-blue-500">{project.beneficiaries}</div>
                             </div>
                           </div>
                         </div>
@@ -246,16 +254,16 @@ const Index: React.FC = () => {
                     </CardHeader>
                     <CardContent>
                       <div className="space-y-4">
-                        <div className="flex items-center justify-between p-4 bg-orange-50 rounded-lg">
+                        <div className="flex items-center justify-between p-4 bg-blue-50 rounded-lg">
                           <div className="flex items-center">
-                            <div className="w-4 h-4 bg-orange-500 rounded mr-3"></div>
+                            <div className="w-4 h-4 bg-blue-600 rounded mr-3"></div>
                             <span>Образовательные программы</span>
                           </div>
                           <span className="font-semibold">45%</span>
                         </div>
-                        <div className="flex items-center justify-between p-4 bg-turquoise-50 rounded-lg">
+                        <div className="flex items-center justify-between p-4 bg-blue-50 rounded-lg">
                           <div className="flex items-center">
-                            <div className="w-4 h-4 bg-turquoise-500 rounded mr-3"></div>
+                            <div className="w-4 h-4 bg-blue-500 rounded mr-3"></div>
                             <span>Инфраструктурные проекты</span>
                           </div>
                           <span className="font-semibold">30%</span>
@@ -311,7 +319,7 @@ const Index: React.FC = () => {
                           <label className="block text-sm font-medium mb-2">Сообщение</label>
                           <Textarea placeholder="Расскажите, как мы можем помочь..." rows={4} />
                         </div>
-                        <Button className="w-full bg-orange-500 hover:bg-orange-600">
+                        <Button className="w-full bg-blue-600 hover:bg-blue-700">
                           <Icon name="Send" size={16} className="mr-2" />
                           Отправить сообщение
                         </Button>
@@ -325,28 +333,28 @@ const Index: React.FC = () => {
                     </CardHeader>
                     <CardContent className="space-y-6">
                       <div className="flex items-start space-x-3">
-                        <Icon name="MapPin" size={20} className="text-orange-500 mt-1" />
+                        <Icon name="MapPin" size={20} className="text-blue-600 mt-1" />
                         <div>
                           <div className="font-medium">Адрес</div>
                           <div className="text-gray-600">г. Хабаровск, ул. Муравьева-Амурского, д. 25</div>
                         </div>
                       </div>
                       <div className="flex items-start space-x-3">
-                        <Icon name="Phone" size={20} className="text-turquoise-500 mt-1" />
+                        <Icon name="Phone" size={20} className="text-blue-500 mt-1" />
                         <div>
                           <div className="font-medium">Телефон</div>
                           <div className="text-gray-600">+7 (495) 123-45-67</div>
                         </div>
                       </div>
                       <div className="flex items-start space-x-3">
-                        <Icon name="Mail" size={20} className="text-orange-500 mt-1" />
+                        <Icon name="Mail" size={20} className="text-blue-600 mt-1" />
                         <div>
                           <div className="font-medium">Email</div>
                           <div className="text-gray-600">info@nonprofit.org</div>
                         </div>
                       </div>
                       <div className="flex items-start space-x-3">
-                        <Icon name="Clock" size={20} className="text-turquoise-500 mt-1" />
+                        <Icon name="Clock" size={20} className="text-blue-500 mt-1" />
                         <div>
                           <div className="font-medium">Время работы</div>
                           <div className="text-gray-600">Пн-Пт: 9:00-18:00</div>
@@ -376,12 +384,12 @@ const Index: React.FC = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-navy-600 text-white py-12">
+      <footer className="bg-gray-800 text-white py-12">
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-3 mb-4">
-                <div className="w-8 h-8 bg-gradient-to-r from-orange-500 to-turquoise-400 rounded">
+                <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded">
                   <Icon name="Heart" size={16} className="text-white m-2" />
                 </div>
                 <span className="font-bold text-lg">АНО РКЦ ЦР</span>
@@ -412,10 +420,10 @@ const Index: React.FC = () => {
             <div>
               <h4 className="font-semibold mb-4">Поддержка</h4>
               <div className="space-y-3">
-                <Button className="w-full bg-orange-500 hover:bg-orange-600 text-sm">
+                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-sm">
                   Сделать пожертвование
                 </Button>
-                <Button variant="outline" className="w-full text-sm border-gray-400 text-gray-300 hover:bg-white hover:text-navy-600">
+                <Button variant="outline" className="w-full text-sm border-gray-400 text-gray-300 hover:bg-white hover:text-gray-800">
                   Стать волонтером
                 </Button>
               </div>
@@ -423,7 +431,7 @@ const Index: React.FC = () => {
           </div>
           <div className="border-t border-gray-500 mt-8 pt-8 text-center">
             <p className="text-gray-400 text-sm">
-              © 2024 Благотворительный фонд. Все права защищены.
+              © 2024 АНО РКЦ «Цифровой регион». Все права защищены.
             </p>
           </div>
         </div>
