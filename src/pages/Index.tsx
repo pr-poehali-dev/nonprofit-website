@@ -86,33 +86,34 @@ const Index: React.FC = () => {
           />
         </div>
         <div className="relative z-10">
-        <div className="container mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="animate-fade-in">
-              <h2 className="text-5xl font-bold mb-6 leading-tight">
-                Цифровое развитие региона
-              </h2>
-              <p className="text-xl mb-8 opacity-90">
-                Мы содействуем цифровой трансформации Хабаровского края и Дальнего Востока. 
-                Координируем проекты в сфере информационных технологий.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
-                  <Icon name="Users" size={20} className="mr-2" />
-                  Присоединиться
-                </Button>
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
-                  <Icon name="FileText" size={20} className="mr-2" />
-                  Наша деятельность
-                </Button>
+          <div className="container mx-auto px-6">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="animate-fade-in">
+                <h2 className="text-5xl font-bold mb-6 leading-tight">
+                  Цифровое развитие региона
+                </h2>
+                <p className="text-xl mb-8 opacity-90">
+                  Мы содействуем цифровой трансформации Хабаровского края и Дальнего Востока. 
+                  Координируем проекты в сфере информационных технологий.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
+                    <Icon name="Users" size={20} className="mr-2" />
+                    Присоединиться
+                  </Button>
+                  <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
+                    <Icon name="FileText" size={20} className="mr-2" />
+                    Наша деятельность
+                  </Button>
+                </div>
               </div>
-            </div>
-            <div className="animate-scale-in">
-              <img 
-                src="/img/6bbc7ce6-6981-4d0d-bb96-6454667f9efe.jpg" 
-                alt="Хабаровск - наш родной город"
-                className="rounded-2xl shadow-2xl"
-              />
+              <div className="animate-scale-in">
+                <img 
+                  src="/img/6bbc7ce6-6981-4d0d-bb96-6454667f9efe.jpg" 
+                  alt="Хабаровск - наш родной город"
+                  className="rounded-2xl shadow-2xl"
+                />
+              </div>
             </div>
           </div>
         </div>
