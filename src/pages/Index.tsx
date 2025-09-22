@@ -14,30 +14,30 @@ const Index: React.FC = () => {
   const projects = [
     {
       id: 1,
-      title: 'Программа поддержки семей',
-      description: 'Комплексная помощь многодетным семьям в кризисной ситуации',
-      progress: 75,
-      budget: '2,500,000',
-      beneficiaries: 340,
-      category: 'Социальная помощь'
+      title: 'Цифровая грамотность',
+      description: 'Обучение жителей региона современным цифровым технологиям',
+      progress: 85,
+      budget: '3,200,000',
+      beneficiaries: 1540,
+      category: 'Образование'
     },
     {
       id: 2,
-      title: 'Экологический мониторинг',
-      description: 'Контроль состояния окружающей среды в промышленных районах',
-      progress: 60,
-      budget: '1,800,000',
-      beneficiaries: 15000,
-      category: 'Экология'
+      title: 'Электронное правительство',
+      description: 'Содействие внедрению госуслуг и цифровых платформ',
+      progress: 75,
+      budget: '2,800,000',
+      beneficiaries: 45000,
+      category: 'Госуслуги'
     },
     {
       id: 3,
-      title: 'Центр профориентации',
-      description: 'Помощь молодежи в выборе профессии и трудоустройстве',
-      progress: 90,
-      budget: '950,000',
-      beneficiaries: 225,
-      category: 'Образование'
+      title: 'Умные технологии',
+      description: 'Разработка и внедрение современных ИТ-решений для региона',
+      progress: 92,
+      budget: '4,500,000',
+      beneficiaries: 8750,
+      category: 'Инновации'
     }
   ];
 
@@ -58,8 +58,8 @@ const Index: React.FC = () => {
                 <Icon name="Heart" size={20} className="text-white" />
               </div>
               <div>
-                <h1 className="text-2xl font-bold text-navy-600">Благотворительный фонд</h1>
-                <p className="text-sm text-gray-600">Помогаем строить лучшее будущее</p>
+                <h1 className="text-2xl font-bold text-navy-600">АНО РКЦ "Цифровой регион"</h1>
+                <p className="text-sm text-gray-600">Региональный координационный центр</p>
               </div>
             </div>
             <nav className="hidden md:flex space-x-8">
@@ -82,20 +82,20 @@ const Index: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
               <h2 className="text-5xl font-bold mb-6 leading-tight">
-                Меняем мир к лучшему
+                Цифровое развитие региона
               </h2>
               <p className="text-xl mb-8 opacity-90">
-                Мы объединяем людей, ресурсы и идеи для решения важных социальных проблем. 
-                Присоединяйтесь к нашей миссии создания справедливого общества.
+                Мы содействуем цифровой трансформации Хабаровского края и Дальнего Востока. 
+                Координируем проекты в сфере информационных технологий.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="bg-white text-orange-500 hover:bg-gray-100">
                   <Icon name="Users" size={20} className="mr-2" />
-                  Стать волонтером
+                  Присоединиться
                 </Button>
                 <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-orange-500">
                   <Icon name="FileText" size={20} className="mr-2" />
-                  Наши отчеты
+                  Наша деятельность
                 </Button>
               </div>
             </div>
@@ -156,7 +156,7 @@ const Index: React.FC = () => {
             <TabsContent value="projects" className="space-y-8">
               <div>
                 <h3 className="text-3xl font-bold text-center mb-8 text-navy-600">
-                  Наши активные проекты
+                  Проекты цифровой трансформации
                 </h3>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {projects.map((project) => (
@@ -249,23 +249,23 @@ const Index: React.FC = () => {
                         <div className="flex items-center justify-between p-4 bg-orange-50 rounded-lg">
                           <div className="flex items-center">
                             <div className="w-4 h-4 bg-orange-500 rounded mr-3"></div>
-                            <span>Социальные программы</span>
+                            <span>Образовательные программы</span>
                           </div>
-                          <span className="font-semibold">65%</span>
+                          <span className="font-semibold">45%</span>
                         </div>
                         <div className="flex items-center justify-between p-4 bg-turquoise-50 rounded-lg">
                           <div className="flex items-center">
                             <div className="w-4 h-4 bg-turquoise-500 rounded mr-3"></div>
-                            <span>Экологические проекты</span>
+                            <span>Инфраструктурные проекты</span>
                           </div>
-                          <span className="font-semibold">20%</span>
+                          <span className="font-semibold">30%</span>
                         </div>
                         <div className="flex items-center justify-between p-4 bg-blue-50 rounded-lg">
                           <div className="flex items-center">
                             <div className="w-4 h-4 bg-blue-500 rounded mr-3"></div>
-                            <span>Образовательные инициативы</span>
+                            <span>Инновационные решения</span>
                           </div>
-                          <span className="font-semibold">10%</span>
+                          <span className="font-semibold">15%</span>
                         </div>
                         <div className="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
                           <div className="flex items-center">
@@ -278,7 +278,7 @@ const Index: React.FC = () => {
                       <div className="mt-6 p-4 bg-green-50 rounded-lg">
                         <div className="flex items-center justify-center text-green-700">
                           <Icon name="CheckCircle" size={20} className="mr-2" />
-                          <span className="font-semibold">95% средств направлено на программы</span>
+                          <span className="font-semibold">90% средств направлено на реализацию проектов</span>
                         </div>
                       </div>
                     </CardContent>
@@ -384,11 +384,11 @@ const Index: React.FC = () => {
                 <div className="w-8 h-8 bg-gradient-to-r from-orange-500 to-turquoise-400 rounded">
                   <Icon name="Heart" size={16} className="text-white m-2" />
                 </div>
-                <span className="font-bold text-lg">НКО Фонд</span>
+                <span className="font-bold text-lg">АНО РКЦ ЦР</span>
               </div>
               <p className="text-gray-300 text-sm">
-                Некоммерческая организация, работающая для создания справедливого 
-                и устойчивого общества.
+                Автономная некоммерческая организация "Региональный координационный центр 'Цифровой регион'" 
+                содействует цифровому развитию региона.
               </p>
             </div>
             <div>
