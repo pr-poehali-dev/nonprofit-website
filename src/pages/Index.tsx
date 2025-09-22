@@ -101,8 +101,8 @@ const Index: React.FC = () => {
             </div>
             <div className="animate-scale-in">
               <img 
-                src="/img/9a008329-97c1-4319-994b-7983f92d59a2.jpg" 
-                alt="Команда организации"
+                src="/img/6bbc7ce6-6981-4d0d-bb96-6454667f9efe.jpg" 
+                alt="Хабаровск - наш родной город"
                 className="rounded-2xl shadow-2xl"
               />
             </div>
@@ -328,7 +328,7 @@ const Index: React.FC = () => {
                         <Icon name="MapPin" size={20} className="text-orange-500 mt-1" />
                         <div>
                           <div className="font-medium">Адрес</div>
-                          <div className="text-gray-600">г. Москва, ул. Примерная, д. 123</div>
+                          <div className="text-gray-600">г. Хабаровск, ул. Муравьева-Амурского, д. 25</div>
                         </div>
                       </div>
                       <div className="flex items-start space-x-3">
